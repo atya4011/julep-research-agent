@@ -9,7 +9,7 @@ from julep import Julep
 load_dotenv()
 
 # Get Julep API key securely
-api_key = os.getenv("eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTA1OTEyNTUsImlhdCI6MTc0NTQwNzI1NSwic3ViIjoiYmQwNDEyZDEtYmI1Yy01NDg4LWE3ZjItMzFjMDUzNDUyYjQ4In0.mg3NMbTqq9JYW0_1Rhnko9C5Wxbf2aSkKEltRHs18e6FGFA7gS5NF-E8tEvrq8LlIr_AjRXRdMkYQuuHAqF1lg")
+api_key = os.getenv("JULEP_API_KEY")
 if not api_key:
     raise ValueError("Missing JULEP_API_KEY in environment variables")
 
